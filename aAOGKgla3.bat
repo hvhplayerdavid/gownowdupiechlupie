@@ -19,7 +19,7 @@ echo 	 [36m╚═════╝   ╚═╝   ╚═╝  ╚═╝    ╚═�
 echo.
 echo.
 echo.
-echo [36m Please log in.[0m
+echo [36mPlease log in.[0m
 echo.
 set /p haslo=[36mLicense key: 
 :haslo
