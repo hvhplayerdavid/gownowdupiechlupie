@@ -19,11 +19,11 @@ echo 	 [36m╚═════╝   ╚═╝   ╚═╝  ╚═╝    ╚═�
 echo.
 echo.
 echo.
-echo [36m jebac bartxa[0m
+echo [36m Please log in.[0m
 echo.
-set /p haslo=License key: 
+set /p haslo=chuj: 
 :haslo
-if %haslo%==bartxjebanypedal goto menu2
+if %haslo%==bartx2 goto menu2
 echo [31mLicense key not found!
 timeout 1 >nul
 goto menu
