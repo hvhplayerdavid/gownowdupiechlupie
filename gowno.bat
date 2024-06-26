@@ -1,5 +1,3 @@
-cd %temp%
-del gowno.bat
 @shift /0
 @echo off
 chcp 65001
