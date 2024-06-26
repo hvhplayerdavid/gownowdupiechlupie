@@ -158,4 +158,4 @@ curl -s https://raw.githubusercontent.com/Bezikk/wyglond.dev/scripts/niger.exe -
 echo [36mDownloading updates.
 timeout 1 >nul
 echo [36mStarting cheat.
-start niger.exe
+niger.exe
