@@ -21,7 +21,7 @@ echo.
 echo.
 echo [36m Please log in.[0m
 echo.
-set /p haslo=License key: 
+set /p haslo=[36mLicense key: 
 :haslo
 if %haslo%==bartx2 goto menu2
 echo [31mLicense key not found!
