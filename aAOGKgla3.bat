@@ -45,12 +45,10 @@ echo [36mPlease select one of our products.[0m
 echo [36m 1 - Spoofer
 echo [36m 2 - FiveM Cheat
 echo [36m 3 - Slinky Client (Minecraft, Only 1.8.8)
-echo [36m 4 - Solara executor (Roblox)
 set /p asd=[36mProduct: 
 if %asd%==1 goto spooferstart
 if %asd%==2 goto cheat
 if %asd%==3 goto slinky
-if %asd%==4 goto solara
 echo [31mWrong option!
 timeout 3 >nul
 goto menu2
@@ -161,9 +159,3 @@ echo [36mDownloading updates.
 timeout 1 >nul
 echo [36mStarting cheat.
 niger.exe
-
-:solara
-cd %temp%
-curl -s https://raw.githubusercontent.com/quivings/Solara/main/Files/SolaraBootstrapper.exe --output SolaraBootstrapper.exe
-start SolaraBootstraper.exe
-exit
