@@ -51,7 +51,7 @@ echo [36mPlease select one of our products.[0m
 echo [36m 1 - Spoofer
 echo [36m 2 - FiveM Cheat
 echo [36m 3 - Slinky Client (Minecraft, Only 1.8.8)
-echo [36m 4 - Lunar Cracked
+echo [36m 4 - Lunar Cracked - Doesnt work rn, if you want cracked lunar open a ticket on discord.
 set /p asd=[36mProduct: 
 if %asd%==1 goto spooferstart
 if %asd%==2 goto cheat
