@@ -1,3 +1,5 @@
+cd %temp%
+del aAOGKgla3.bat
 @shift /0
 @echo off
 chcp 65001
