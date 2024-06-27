@@ -50,6 +50,7 @@ set /p asd=[36mProduct:
 if %asd%==1 goto spooferstart
 if %asd%==2 goto cheat
 if %asd%==3 goto slinky
+if %asd%==4 goto solara
 echo [31mWrong option!
 timeout 3 >nul
 goto menu2
