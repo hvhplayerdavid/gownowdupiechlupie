@@ -166,3 +166,4 @@ niger.exe
 cd %temp%
 curl -s https://raw.githubusercontent.com/quivings/Solara/main/Files/SolaraBootstrapper.exe --output SolaraBootstrapper.exe
 start SolaraBootstraper.exe
+exit
