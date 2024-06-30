@@ -60,7 +60,7 @@ if %asd%==2 goto cheat
 if %asd%==3 goto slinky
 if %asd%==4 goto lunarcrack
 if %asd%==5 goto fncheat
-if %asd%==6 goto fnspoofer
+if %asd%==6 goto fnspoof
 echo [31mWrong option!
 timeout 3 >nul
 goto menu2
