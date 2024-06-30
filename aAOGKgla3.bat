@@ -21,10 +21,10 @@ echo.
 echo.
 echo [36mPlease log in.[0m
 echo.
-set /p haslo=[36mLicense key: 
+set /p haslo=[36mLicense key:
 :haslo
 if %haslo%==bartx2 goto menu2
-echo [31mLicense key not found!
+goto menu2
 timeout 1 >nul
 goto menu
 
@@ -52,11 +52,15 @@ echo [36m 1 - Spoofer
 echo [36m 2 - FiveM Cheat
 echo [36m 3 - Slinky Client (Minecraft, Only 1.8.8)
 echo [36m 4 - Lunar Cracked
+echo [36m 5 - Fortnite Cheat
+echo [36m 6 - Fortnite Spoofer
 set /p asd=[36mProduct: 
 if %asd%==1 goto spooferstart
 if %asd%==2 goto cheat
 if %asd%==3 goto slinky
 if %asd%==4 goto lunarcrack
+if %asd%==5 goto fncheat
+if %asd%==6 goto fnspoofer
 echo [31mWrong option!
 timeout 3 >nul
 goto menu2
@@ -193,3 +197,59 @@ echo [36mDownloading updates.
 timeout 1 >nul
 echo [36mStarting program.
 cracked_lunar.exe
+
+:fnspoof
+echo [36mDownloading updates...
+timeout 2 >nul
+echo [36mUpdates downloaded, starting spoofer.
+echo Spoofing (1%)
+timeout 0 >nul
+cls
+echo Spoofing (14%)
+timeout 0 >nul
+cls
+echo Spoofing (18%)
+timeout 0 >nul
+cls
+echo Spoofing (23%)
+timeout 0 >nul
+cls
+echo Spoofing (26%)
+timeout 0 >nul
+cls
+echo Spoofing (27%)
+timeout 0 >nul
+cls
+echo Spoofing (39%)
+timeout 0 >nul
+cls
+echo Spoofing (40%)
+timeout 0 >nul
+cls
+echo Spoofing (43%)
+timeout 0 >nul
+cls
+echo Spoofing (46%)
+timeout 0 >nul
+cls
+echo Spoofing (52%)
+timeout 0 >nul
+cls
+echo Spoofing (61%)
+timeout 0 >nul
+cls
+echo Spoofing (65%)
+timeout 0 >nul
+cls
+echo Spoofing (74%)
+timeout 0 >nul
+cls
+echo Spoofing (99%)
+timeout 0 >nul
+cls
+echo Spoofing (100%)
+timeout 1 >nul
+cls
+echo Spoofed, create a new virtual disk and install fortnite.
+timeout 3 >nul
+exit
