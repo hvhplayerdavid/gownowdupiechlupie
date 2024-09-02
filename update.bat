@@ -54,22 +54,6 @@ echo                                                ┃                         
 echo                                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
 echo.
 echo.
-echo                                                Wybierz nazwy botów (Wybrane/Losowe)
-set /p nazwabotow=
-cls
-echo.
-echo.
-echo.
-echo 							   █▀▀ ▀█▀ █ █
-echo 							   █▄▄  █  █▀█   
-echo.                                               ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-echo                                                ┃                                 ┃
-echo                                                ┃           Dev: Bezik            ┃   
-echo                                                ┃  https://discord.gg/fKrgr5TmPr  ┃
-echo                                                ┃                                 ┃
-echo                                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
-echo.
-echo.
 echo                                                Podaj wersje serwera (1.18.2-1.20.6)
 set /p wersja=
 if %wersja%==1.18.2 set XD=mc-bots-1.2.3.jar
